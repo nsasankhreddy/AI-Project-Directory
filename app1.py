@@ -4,8 +4,8 @@
 # In[13]:
 
 
-get_ipython().system('pip install transformers')
-get_ipython().system('pip install streamlit')
+# get_ipython().system('pip install transformers')
+# get_ipython().system('pip install streamlit')
 
 
 # In[14]:
