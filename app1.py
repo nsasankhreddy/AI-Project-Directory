@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[13]:
+
+
+get_ipython().system('pip install transformers')
+get_ipython().system('pip install streamlit')
+
+
+# In[14]:
+
+
 import streamlit as st
 from transformers import pipeline
 
@@ -15,3 +28,4 @@ if st.button("Generate Story"):
     result = generator(user_prompt, max_length=100, num_return_sequences=1)
     st.write("### Your Story:")
     st.write(result[0]["generated_text"])
+
